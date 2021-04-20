@@ -22,6 +22,7 @@ getUsers();
 
 
 async function showdetails (login){
+    txt1="";
     const response = await fetch("https://api.github.com/users/"+login+"/repos");
     const result = await response.json();
     txt1 +="<ul>";
